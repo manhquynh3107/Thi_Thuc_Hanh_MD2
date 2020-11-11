@@ -55,7 +55,7 @@
         <tr>
         <tr>
             <td>
-                <a class="btn btn-warning" href="http://localhost/Example/index.php">Trở về</a>
+                <a class="btn btn-warning" href="http://localhost/thi_MD_2/Example/index.php">Trở về</a>
             </td>
             <td>
                 <button style="width: 200px" class="btn btn-success" type="submit">Cập nhật</button>

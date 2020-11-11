@@ -64,8 +64,7 @@ class ProductManager
     {
         {
 
-            $sql = "UPDATE `products` SET `name`=:name,`type`=:type,
-`price`=:price,`count`=:count,`date`=:date,`note`= :note WHERE id = :id";
+            $sql = "UPDATE `products` SET `name`=:name,`type`=:type,`price`=:price,`count`=:count,`date`=:date,`note`= :note WHERE id = :id";
             $stmt = $this->database->prepare($sql);
             $stmt->bindParam(":id", $product->getId());
             $stmt->bindParam(":name", $product->getName());
@@ -79,9 +78,7 @@ class ProductManager
     }
     public function search($key)
     {
-        $sql = "SELECT *
-FROM products
-WHERE name LIKE :key";
+        $sql = "SELECT *FROM products WHERE name LIKE :key";
         $stmt = $this->database->prepare($sql);
         $stmt->bindParam(":key", $key);
         $stmt->execute();

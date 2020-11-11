@@ -50,8 +50,7 @@ include_once "src/controller/ProductController.php";
             <th>
                 Nhập Tên Sản Phẩm : <form style="display: inline; width: 100px; height: 50px" class="form-inline my-2 my-lg-0;" method="post"
                       action="index.php?page=showInfo">
-                    <input name="search" class="form-control" type="search"
-                           aria-label="Search">
+                    <input name="search" class="form-control" type="search" aria-label="Search" placeholder="Tìm Kiếm">
                     <button style="background-color: black" class="btn btn-success" type="submit">Tìm kiếm</button>
                 </form>
             </th>
