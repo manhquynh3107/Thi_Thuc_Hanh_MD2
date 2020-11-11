@@ -78,7 +78,7 @@ include_once "src/controller/ProductController.php";
             <td><?php echo $product->getType(); ?></td>
             <td style="text-align: center">
                 <a style="width: 100px" class="btn btn-outline-secondary" href="index.php?page=update&id=<?php echo $product->getId(); ?>">Chỉnh sửa</a>
-                <a style="width: 80px" class="btn btn-danger" onclick="return confirm('Bạn chắc chắn với quyết định này chứ ??')"
+                <a style="width: 80px" class="btn btn-outline-danger" onclick="return confirm('Bạn chắc chắn với quyết định này chứ ??')"
                    href="index.php?page=delete&id=<?php echo $product->getId(); ?>">Xóa</a>
             </td>
         </tr>
